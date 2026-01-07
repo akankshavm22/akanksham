@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akanksha Mane - Cybersecurity Specialist Portfolio</title>
+    <meta name="description" content="Aspiring Cybersecurity Specialist | Final Year IT Engineering Student | Building Secure Digital Solutions">
+    <meta name="keywords" content="cybersecurity, information technology, portfolio, akanksha mane, security specialist">
+    <meta name="author" content="Akanksha Mane">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Akanksha Mane - Cybersecurity Specialist Portfolio">
+    <meta property="og:description" content="Aspiring Cybersecurity Specialist | Building Secure Digital Solutions">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold heading-gradient hover-glow">
+                    AM
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <button class="nav-link" data-target="#home">Home</button>
+                    <button class="nav-link" data-target="#about">About</button>
+                    <button class="nav-link" data-target="#skills">Skills</button>
+                    <button class="nav-link" data-target="#certifications">Certifications</button>
+                    <button class="nav-link" data-target="#research">Research</button>
+                    <button class="nav-link" data-target="#contact">Contact</button>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="btn-icon rounded-full hover:bg-cyan-500/10 transition-all duration-300">
+                        <i id="theme-icon" data-lucide="moon" class="w-5 h-5 text-foreground hover:text-cyan-500 transition-colors"></i>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="btn-icon md:hidden rounded-full hover:bg-cyan-500/10 transition-all duration-300">
+                        <i id="mobile-menu-icon" data-lucide="menu" class="w-5 h-5 text-foreground"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden mt-4 pb-4 border-t border-border/50 hidden">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <button class="nav-link-mobile" data-target="#home">Home</button>
+                    <button class="nav-link-mobile" data-target="#about">About</button>
+                    <button class="nav-link-mobile" data-target="#skills">Skills</button>
+                    <button class="nav-link-mobile" data-target="#certifications">Certifications</button>
+                    <button class="nav-link-mobile" data-target="#research">Research</button>
+                    <button class="nav-link-mobile" data-target="#contact">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-blue-950/20 dark:via-background dark:to-cyan-950/20">
+            <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+            <div class="container mx-auto px-4 text-center z-10">
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-7xl font-bold heading-gradient heading-glow animate-in fade-in duration-1000">
+                            Akanksha Mane
+                        </h1>
+                        <p class="text-xl md:text-2xl text-muted-foreground animate-in fade-in duration-1000 delay-200">
+                            Aspiring Cybersecurity Specialist
+                        </p>
+                        <p class="text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in duration-1000 delay-400">
+                            Final Year IT Engineering Student passionate about building secure digital solutions and protecting against cyber threats
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in duration-1000 delay-600">
+                        <button class="btn-primary" onclick="scrollToSection('#contact')">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                            Get In Touch
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('#projects')">
+                            <i data-lucide="code" class="w-5 h-5 mr-2"></i>
+                            View Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <button onclick="scrollToSection('#about')" class="text-muted-foreground hover:text-cyan-500 transition-colors">
+                    <i data-lucide="chevron-down" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 heading-gradient heading-glow">
+                        About Me
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Passionate about cybersecurity and technology, I'm dedicated to building secure digital solutions and contributing to a safer digital world.
+                    </p>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <!-- Bio Content -->
+                        <div class="space-y-6">
+                            <div class="card p-8 card-float">
+                                <h3 class="text-2xl font-bold mb-6 hover-glow">Who I Am</h3>
+                                <div class="space-y-4 text-foreground/80 leading-relaxed">
+                                    <p>
+                                        I'm a final-year Information Technology engineering student with a deep passion for cybersecurity and digital innovation. My journey in tech began with curiosity about how systems work and evolved into a mission to protect them from emerging threats.
+                                    </p>
+                                    <p>
+                                        Currently pursuing my Bachelor's degree at Yadavrao Tasgaonkar College of Engineering & Management, I've maintained a strong academic record while actively engaging in practical projects and research work that bridges theoretical knowledge with real-world applications.
+                                    </p>
+                                    <p>
+                                        My expertise spans across multiple domains including ethical hacking, blockchain security, AI-powered security solutions, and full-stack development. I believe in the power of technology to solve complex problems and am committed to using my skills for positive impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stats & Quick Facts -->
+                        <div class="space-y-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="card text-center p-6 card-float">
+                                    <div class="text-3xl font-bold text-cyan-500 mb-2">4+</div>
+                                    <div class="text-sm text-muted-foreground">Research Papers</div>
+                                </div>
+                                <div class="card text-center p-6 card-float">
+                                    <div class="text-3xl font-bold text-cyan-500 mb-2">10+</div>
+                                    <div class="text-sm text-muted-foreground">Projects Completed</div>
+                                </div>
+                                <div class="card text-center p-6 card-float">
+                                    <div class="text-3xl font-bold text-cyan-500 mb-2">7.07</div>
+                                    <div class="text-sm text-muted-foreground">Current CGPA</div>
+                                </div>
+                                <div class="card text-center p-6 card-float">
+                                    <div class="text-3xl font-bold text-cyan-500 mb-2">2026</div>
+                                    <div class="text-sm text-muted-foreground">Expected Graduation</div>
+                                </div>
+                            </div>
+
+                            <!-- Current Focus -->
+                            <div class="card p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20">
+                                <h4 class="font-bold mb-4 flex items-center">
+                                    <i data-lucide="target" class="w-5 h-5 mr-2 text-cyan-500"></i>
+                                    Current Focus
+                                </h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>
+                                        <span>Advanced Cybersecurity Research</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>
+                                        <span>Blockchain Security Solutions</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>
+                                        <span>AI-Powered Security Tools</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>
+                                        <span>Industry Certifications</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Simplified version) -->
+        <section id="skills" class="py-20 bg-muted/30">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 heading-gradient heading-glow">
+                        Skills & Technologies
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Comprehensive skill set spanning cybersecurity, software development, and emerging technologies
+                    </p>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Cybersecurity -->
+                        <div class="card p-6 card-float">
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="shield" class="w-8 h-8 text-white"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">Cybersecurity</h3>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="skill-item">Ethical Hacking</div>
+                                <div class="skill-item">Network Security</div>
+                                <div class="skill-item">Digital Forensics</div>
+                                <div class="skill-item">Penetration Testing</div>
+                                <div class="skill-item">Security Auditing</div>
+                            </div>
+                        </div>
+
+                        <!-- Programming -->
+                        <div class="card p-6 card-float">
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="code" class="w-8 h-8 text-white"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">Programming</h3>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="skill-item">Python</div>
+                                <div class="skill-item">Java</div>
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">C/C++</div>
+                                <div class="skill-item">SQL</div>
+                            </div>
+                        </div>
+
+                        <!-- Web Technologies -->
+                        <div class="card p-6 card-float">
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <i data-lucide="globe" class="w-8 h-8 text-white"></i>
+                                </div>
+                                <h3 class="font-bold text-lg">Web Technologies</h3>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="skill-item">React</div>
+                                <div class="skill-item">Node.js</div>
+                                <div class="skill-item">HTML/CSS</div>
+                                <div class="skill-item">REST APIs</div>
+                                <div class="skill-item">MongoDB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 heading-gradient heading-glow">
+                        Certifications & Learning Path
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Continuous learning journey towards cybersecurity expertise
+                    </p>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- CS50 Certification -->
+                        <div class="card p-6 card-float">
+                            <div class="absolute top-4 right-4">
+                                <div class="badge badge-outline">
+                                    <i data-lucide="clock" class="w-3 h-3 mr-1"></i>
+                                    Planned
+                                </div>
+                            </div>
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-2xl">🎓</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">CS50 Introduction to Cybersecurity</h3>
+                                <p class="text-muted-foreground font-medium">Harvard University</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-sm text-muted-foreground leading-relaxed">
+                                    Comprehensive introduction to cybersecurity principles, covering topics from cryptography to digital forensics and ethical hacking.
+                                </p>
+                                <div class="flex items-center space-x-2 text-sm">
+                                    <i data-lucide="calendar" class="w-4 h-4 text-cyan-500"></i>
+                                    <span class="text-muted-foreground">Target Date: October 2025</span>
+                                </div>
+                                <div class="mt-4">
+                                    <div class="w-full bg-muted rounded-full h-2">
+                                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full w-1/4"></div>
+                                    </div>
+                                    <p class="text-xs text-muted-foreground mt-1">Preparation in progress</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CompTIA Security+ -->
+                        <div class="card p-6 card-float">
+                            <div class="absolute top-4 right-4">
+                                <div class="badge badge-outline">
+                                    <i data-lucide="clock" class="w-3 h-3 mr-1"></i>
+                                    Planned
+                                </div>
+                            </div>
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-2xl">🛡️</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">CompTIA Security+</h3>
+                                <p class="text-muted-foreground font-medium">CompTIA</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-sm text-muted-foreground leading-relaxed">
+                                    Industry-standard certification covering security fundamentals, risk management, and incident response.
+                                </p>
+                                <div class="flex items-center space-x-2 text-sm">
+                                    <i data-lucide="calendar" class="w-4 h-4 text-cyan-500"></i>
+                                    <span class="text-muted-foreground">Target Date: October 2025</span>
+                                </div>
+                                <div class="mt-4">
+                                    <div class="w-full bg-muted rounded-full h-2">
+                                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full w-1/5"></div>
+                                    </div>
+                                    <p class="text-xs text-muted-foreground mt-1">Preparation in progress</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CompTIA CyberDefense -->
+                        <div class="card p-6 card-float">
+                            <div class="absolute top-4 right-4">
+                                <div class="badge badge-outline">
+                                    <i data-lucide="clock" class="w-3 h-3 mr-1"></i>
+                                    Planned
+                                </div>
+                            </div>
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-2xl">⚔️</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">CompTIA CyberDefense</h3>
+                                <p class="text-muted-foreground font-medium">CompTIA</p>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-sm text-muted-foreground leading-relaxed">
+                                    Advanced cybersecurity defense techniques, threat hunting, and security operations.
+                                </p>
+                                <div class="flex items-center space-x-2 text-sm">
+                                    <i data-lucide="calendar" class="w-4 h-4 text-cyan-500"></i>
+                                    <span class="text-muted-foreground">Target Date: December 2025</span>
+                                </div>
+                                <div class="mt-4">
+                                    <div class="w-full bg-muted rounded-full h-2">
+                                        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-2 rounded-full w-1/6"></div>
+                                    </div>
+                                    <p class="text-xs text-muted-foreground mt-1">Preparation in progress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certification Strategy -->
+                    <div class="max-w-4xl mx-auto mt-16">
+                        <div class="card p-8 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20">
+                            <div class="text-center mb-8">
+                                <i data-lucide="award" class="w-12 h-12 mx-auto mb-4 text-cyan-500"></i>
+                                <h3 class="text-2xl font-bold mb-2">Certification Strategy</h3>
+                                <p class="text-muted-foreground">
+                                    Strategic approach to building comprehensive cybersecurity expertise
+                                </p>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-6 text-center">
+                                <div class="space-y-2">
+                                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
+                                        <span class="text-white font-bold">1</span>
+                                    </div>
+                                    <h4 class="font-semibold">Foundation</h4>
+                                    <p class="text-sm text-muted-foreground">
+                                        Building core cybersecurity knowledge with Harvard CS50 and CompTIA Security+
+                                    </p>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto">
+                                        <span class="text-white font-bold">2</span>
+                                    </div>
+                                    <h4 class="font-semibold">Specialization</h4>
+                                    <p class="text-sm text-muted-foreground">
+                                        Advanced defense techniques with CompTIA CyberDefense certification
+                                    </p>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto">
+                                        <span class="text-white font-bold">3</span>
+                                    </div>
+                                    <h4 class="font-semibold">Future Plans</h4>
+                                    <p class="text-sm text-muted-foreground">
+                                        Expanding to cloud security and advanced enterprise certifications
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="py-20 bg-muted/30">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 heading-gradient heading-glow">
+                        Research & Publications
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Contributing to the advancement of cybersecurity and emerging technologies through research
+                    </p>
+                </div>
+
+                <!-- Research Statistics -->
+                <div class="max-w-4xl mx-auto mb-16">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="card text-center p-6 card-float">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-cyan-500 mb-1">1</div>
+                            <div class="text-sm text-muted-foreground">Publications</div>
+                        </div>
+                        <div class="card text-center p-6 card-float">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="users" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-cyan-500 mb-1">3</div>
+                            <div class="text-sm text-muted-foreground">Co-authors</div>
+                        </div>
+                        <div class="card text-center p-6 card-float">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="external-link" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-cyan-500 mb-1">2</div>
+                            <div class="text-sm text-muted-foreground">Research Areas</div>
+                        </div>
+                        <div class="card text-center p-6 card-float bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-950/20 dark:to-blue-950/20">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="award" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-cyan-500 mb-1">2025-2026</div>
+                            <div class="text-sm text-muted-foreground">Current Research</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Research Paper -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-2xl font-bold text-center mb-12">Current Research</h3>
+                    
+                    <div class="card p-8 card-float">
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <!-- Paper Image -->
+                            <div class="lg:w-48 flex-shrink-0">
+                                <div class="relative overflow-hidden rounded-lg">
+                                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGRpZ2l0YWwlMjBmb3JlbnNpY3MlMjB0b29scyUyMGN5YmVyc2VjdXJpdHl8ZW58MXx8fHwxNzU2ODMxMzE3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="AI-assisted digital forensics tools" class="w-full h-32 lg:h-40 object-cover">
+                                    <div class="absolute top-2 right-2">
+                                        <div class="badge badge-outline">Ongoing</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Paper Details -->
+                            <div class="flex-1 space-y-4">
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2 hover-glow">AI-assisted digital forensics tools</h4>
+                                    <div class="text-sm text-muted-foreground mb-2">
+                                        <span class="font-medium">Authors:</span> Akanksha Mane, Poonam Todkar, Arpita Patil
+                                    </div>
+                                    <div class="flex flex-wrap gap-4 text-sm text-muted-foreground mb-3">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                                            Expected 2026
+                                        </div>
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                                            Review Paper
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-foreground/80 leading-relaxed">
+                                    This research presents a comprehensive review of artificial intelligence applications in digital forensics, exploring how machine learning algorithms and automated analysis tools are revolutionizing digital evidence collection, processing, and analysis. The study examines current AI-assisted forensic methodologies, their effectiveness in handling large-scale digital investigations, and the challenges in maintaining evidence integrity while leveraging artificial intelligence capabilities.
+                                </p>
+
+                                <!-- Keywords -->
+                                <div>
+                                    <div class="text-sm font-semibold mb-2">Keywords:</div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="badge badge-outline">Digital Forensics</span>
+                                        <span class="badge badge-outline">Artificial Intelligence</span>
+                                        <span class="badge badge-outline">Machine Learning</span>
+                                        <span class="badge badge-outline">Evidence Analysis</span>
+                                        <span class="badge badge-outline">Cybersecurity</span>
+                                        <span class="badge badge-outline">Automated Investigation</span>
+                                        <span class="badge badge-outline">Forensic Technology</span>
+                                    </div>
+                                </div>
+
+                                <!-- Publication Details -->
+                                <div class="text-sm text-muted-foreground">
+                                    <div>
+                                        <span class="font-medium">Journal:</span> International Journal of Scientific Research in Engineering and Management (IJSREM)
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">DOI:</span> Pending
+                                    </div>
+                                </div>
+
+                                <!-- Status -->
+                                <div class="flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 font-medium">
+                                    <i data-lucide="award" class="w-4 h-4"></i>
+                                    <span>Current Research</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Areas -->
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-center mb-12">Research Focus Areas</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="card p-6 card-float">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="font-bold text-lg hover-glow">Digital Forensics</h4>
+                                <span class="badge badge-secondary">1 paper</span>
+                            </div>
+                            <p class="text-muted-foreground">
+                                AI-assisted digital evidence analysis, automated investigation tools, and forensic technology advancement
+                            </p>
+                        </div>
+                        
+                        <div class="card p-6 card-float">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="font-bold text-lg hover-glow">Artificial Intelligence</h4>
+                                <span class="badge badge-secondary">1 paper</span>
+                            </div>
+                            <p class="text-muted-foreground">
+                                Machine learning applications in cybersecurity, forensics, and automated security analysis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 heading-gradient heading-glow">
+                        Get In Touch
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Let's connect and discuss opportunities, collaborations, or just have a conversation about cybersecurity and technology
+                    </p>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <!-- Contact Form -->
+                        <div class="card p-8 card-float">
+                            <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                            <form id="contact-form" class="space-y-6">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                        <input type="text" id="name" name="name" required class="input-field" placeholder="Your Name">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                        <input type="email" id="email" name="email" required class="input-field" placeholder="your.email@example.com">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                                    <input type="text" id="subject" name="subject" required class="input-field" placeholder="What's this about?">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                    <textarea id="message" name="message" required rows="6" class="input-field resize-none" placeholder="Your message..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary w-full" id="submit-btn">
+                                    <i data-lucide="send" class="w-5 h-5 mr-2"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="space-y-8">
+                            <div class="card p-6 card-float">
+                                <h3 class="text-xl font-bold mb-6">Let's Connect</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-colors">
+                                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                                            <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium">Email</p>
+                                            <p class="text-muted-foreground">akankshavm22@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-colors">
+                                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                                            <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium">Phone</p>
+                                            <p class="text-muted-foreground">+91 8779671043</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card p-6 card-float">
+                                <h3 class="text-xl font-bold mb-6">Social Links</h3>
+                                <div class="flex space-x-4">
+                                    <a href="https://github.com/akankshavm22" target="_blank" rel="noopener noreferrer" class="social-link">
+                                        <i data-lucide="github" class="w-6 h-6"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/akankshavmane/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                                    </a>
+                                    <a href="https://medium.com/@akankshavm22" target="_blank" rel="noopener noreferrer" class="social-link">
+                                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-muted/30 py-12 border-t">
+        <div class="container mx-auto px-4">
+            <div class="text-center space-y-6">
+                <div class="flex justify-center items-center space-x-2">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                        Akanksha Mane
+                    </div>
+                </div>
+                <p class="text-muted-foreground">
+                    Aspiring Cybersecurity Specialist | Building Secure Digital Solutions
+                </p>
+                
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/akankshavm22" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-cyan-500 transition-colors duration-200">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/akankshavmane/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-cyan-500 transition-colors duration-200">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://medium.com/@akankshavm22" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-cyan-500 transition-colors duration-200">
+                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                
+                <div class="flex justify-center space-x-6 text-sm text-muted-foreground">
+                    <span>&copy; 2025 Akanksha Mane. All rights reserved.</span>
+                </div>
+                <div class="pt-4 border-t border-muted-foreground/20">
+                    <p class="text-xs text-muted-foreground">
+                        Built with HTML, CSS, and JavaScript | Designed for modern browsers
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 invisible z-40">
+        <i data-lucide="arrow-up" class="w-5 h-5 mx-auto"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-4 right-4 z-50 space-y-2"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
