@@ -1,0 +1,128 @@
+
+Find a repository…
+advanced-encryption-tool Public
+ Python Updated on Jan 23
+advanced-web-vulnerability-scanner Public
+ Python Updated on Jan 23
+file-integrity-checker Public
+ Python Updated on Jan 23
+AI-Based-Network-IDS Public
+AI-NIDS is an advanced student-built cybersecurity project that uses a Random Forest ML model to detect malicious network traffic from the CIC-IDS dataset. It combines real-time attack simulation, …
+random-forest-classification
+network-traffic-analysis
+network-intrusion-detection-systems
+machine-learning-for-cybersecurity
+malicious-vs-benign-traffic-detection
+soc-style-attack-analysis
+ Python MIT License Updated on Jan 12
+Main-Crafts-Technology Public
+This repository contains my official task submission for the MainCrafts Technology Internship. It includes the complete documentation, code, results, and all required supporting materials.
+Updated on Dec 15, 2025
+Java-Paint-App Public
+A simple yet powerful desktop drawing application built entirely using Java Swing. This project lets users draw, erase, and create basic shapes with customizable colors and brush sizes — a mini ver…
+java
+gui
+swing
+java-project
+java-gui
+drawing-application
+paint-app
+ Java  1  1 MIT License Updated on Nov 1, 2025
+akankshavm22 Public
+Updated on Oct 30, 2025
+FaceSecure-ATM-Pinless-Banking-System Public
+FaceSecure ATM is a pinless banking system that uses face recognition for secure authentication. It integrates a webcam, Arduino-based RFID triggers, and a Streamlit web interface, allowing users t…
+python
+opencv
+security
+arduino
+sqlite
+web-application
+biometrics
+ Python  1 MIT License Updated on Sep 25, 2025
+Laptop-Diagnoser Public
+Laptop Diagnoser is a Python based Windows tool that monitors system, health, list top processes, checks network & event logs, clean temp files, and suggests safe repair commands. It generates deta…
+python
+windows
+open-source
+student-project
+system-monitoring
+event-logs
+pysimplegui
+ Python  1 MIT License Updated on Sep 23, 2025
+Currency-Converter Public
+A responsive and interactive Currency Converter built using HTML, CSS, and JavaScript, which allows users to convert currencies from one country to another using real-time exchange rates.
+web-app
+exchange-rates
+currency-converter
+html-css-javascript
+interactive-ui
+resposive-design
+frontend-project
+ JavaScript Updated on Aug 27, 2025
+SocialBook Public
+SocialBook is a web platform for college students to connect, share educational resources, send messages, and collaborate globally. With features like friend requests, profile management, and a sec…
+react
+redux
+firebase
+social-network
+nextjs
+chat-app
+diploma-project
+ JavaScript  1 Updated on Aug 27, 2025
+ATM-Simulation-System Public
+This is a simple ATM Simulation System built in Java with an interactive Swing GUI. It simulates basic ATM operations like Login, Balance Inquiry, Deposit, and Withdrawal with a modern card-based i…
+desktop-app
+java
+swing
+oop
+gui-application
+student-project
+atm-simulator
+ Java MIT License Updated on Aug 25, 2025
+Portfolio-Website Public
+A personal portfolio website showcasing skills, projects, and contact info. Features responsive design, dark/light theme toggle, smooth scroll animations, and typing effect. Highlights cybersecurit…
+javascript
+html5
+css3
+portfolio-website
+responsive-design
+html-css-javascript
+front-end-development
+ CSS MIT License Updated on Aug 24, 2025
+VioletTube Public
+VioletTube is a YouTube-inspired video platform UI built with HTML, CSS, and JavaScript. It features a modern design with dark/light mode, collapsible sidebar, category filters, shorts, video previ…
+javascript
+html5
+css3
+web-app
+html-css-javascript
+front-end-development
+youtube-clone
+ JavaScript MIT License Updated on Aug 24, 2025
+VioletBook-Facebook-Clone Public
+VioletBook is a Facebook-inspired social media UI clone created using HTML, CSS, and JavaScript. It includes a navigation bar, stories, posts feed, sidebars, ads, and contacts, all styled with a vi…
+javascript
+social-media
+html5
+css3
+front-end-development
+social-media-ui
+respnsivedesign
+ CSS MIT License Updated on Aug 24, 2025
+Notepad Public
+A modern Notepad application built with HTML, CSS, and JavaScript. It features a clean and animated UI where users can write, save, search, highlight, clear, and download notes, with support for Da…
+javascript
+html5
+css3
+animation
+localstorage
+text-editor
+toggle-buttons
+ CSS MIT License Updated on Aug 24, 2025
+AI-PhishGuard Public
+AI-PhishGuard is an AI-powered phishing email detection tool with a beautiful Streamlit dashboard. It uses Natural Language Processing (NLP) and Machine Learning to classify emails as Phishing or S…
+ Python  1 Updated on Aug 14, 2025
+ubiquitous-chainsaw Private
+Updated on Aug 11, 2025
+AirSentinel-Wireless-Security-Audit-Analysis-Tool
