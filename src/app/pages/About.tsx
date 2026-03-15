@@ -1,6 +1,5 @@
 import { Shield, Code, Users, MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
-import profilePhoto from 'figma:asset/27a08a0cff9a2baf320ba12317e91bc7e2916f98.png';
 
 export function About() {
   return (
@@ -29,7 +28,7 @@ export function About() {
           >
             <div className="bg-slate-900 border border-cyan-500/20 rounded-lg overflow-hidden">
               <img
-                src={profilePhoto}
+                src="https://media.licdn.com/dms/image/v2/D5603AQFP85kzqBTehw/profile-displayphoto-crop_800_800/B56Zsqn0aCIYAM-/0/1765946642743?e=1775088000&v=beta&t=gOgdt0YVOMby6b_-nFlz-iR-0YmRyO8EbMgs8Cf_dvQ"
                 alt="Akanksha Mane"
                 className="w-full h-auto"
               />
