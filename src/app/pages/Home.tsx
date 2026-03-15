@@ -38,13 +38,15 @@ export function Home() {
               Protecting the digital world through vulnerability assessment, threat analysis, and security research
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/about"
+              <a
+                href="https://drive.google.com/file/d/1rdUj1_X0CfgB9CiDvS6f__cVWXA9GZlb/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 bg-cyan-500 text-slate-950 rounded-md font-mono hover:bg-cyan-400 transition-colors inline-flex items-center gap-2 justify-center"
               >
-                Learn More
+                View Resume
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
               <Link
                 to="/contact"
                 className="px-8 py-3 bg-transparent border border-cyan-500 text-cyan-400 rounded-md font-mono hover:bg-cyan-500/10 transition-colors"
