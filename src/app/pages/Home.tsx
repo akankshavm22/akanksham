@@ -122,10 +122,10 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { number: 'Top 7%', label: 'TryHackMe Ranking' },
-              { number: '138K+', label: 'Platform Points' },
+              { number: 'Top 1%', label: 'TryHackMe Ranking' },
+              { number: '20K+', label: 'Platform Points' },
               { number: '9.1/10', label: 'Academic CGPA' },
-              { number: '8+', label: 'Certifications' },
+              { number: '10+', label: 'Certifications' },
             ].map((stat, index) => (
               <motion.div
                 key={index}
