@@ -140,8 +140,8 @@ export function Skills() {
             {[
               {
                 platform: 'TryHackMe',
-                achievement: 'Top 7% Global Ranking',
-                detail: '138,000+ Points | Hacker Level',
+                achievement: 'Top 1% Global Ranking',
+                detail: '20,000+ Points | Hacker Level',
               },
               {
                 platform: 'Academic Excellence',
