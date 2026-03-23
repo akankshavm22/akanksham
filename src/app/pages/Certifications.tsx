@@ -3,19 +3,40 @@ import { motion } from 'motion/react';
 
 export function Certifications() {
   const certifications = [
+     {
+      title: 'SOC Level 1',
+      issuer: 'TryHackMe',
+      issued: 'Mar 2026',
+      expires: 'Mar 2029',
+      credentialId: 'THM-AIHFL27TQ9',
+    },
+    {
+      title: 'Network Defenses',
+      issuer: 'Cisco Networking Academy',
+      issued: 'Mar 2026',
+      expires: null,
+      credentialId: 'e41f2688-3eae-43a0-b290-3410cdb34799',
+    },
+    {
+      title: 'Endpoint Security',
+      issuer: 'Cisco Networking Academy',
+      issued: 'Mar 2026',
+      expires: null,
+      credentialId: 'd6d78c00-9077-48a9-97de-0ca321ccb608',
+    },
     {
       title: 'Cyber Security 101',
       issuer: 'TryHackMe',
       issued: 'Mar 2026',
       expires: 'Mar 2029',
-      credentialId: null,
+      credentialId: 'THM-0CI4SNSOM9',
     },
     {
       title: 'Pre-Security',
       issuer: 'TryHackMe',
       issued: 'Mar 2026',
       expires: 'Mar 2029',
-      credentialId: null,
+      credentialId: 'THM-4JE1U7FGST',
     },
     {
       title: 'Fortinet Certified Associate in Cybersecurity',
@@ -177,7 +198,7 @@ export function Certifications() {
             {[
               {
                 area: 'Defensive Security',
-                count: 4,
+                count: 5,
                 examples: ['Blue Team', 'SIEM', 'Threat Analysis'],
               },
               {
@@ -187,12 +208,12 @@ export function Certifications() {
               },
               {
                 area: 'Network Security',
-                count: 3,
+                count: 5,
                 examples: ['Cisco', 'Fortinet', 'Traffic Analysis'],
               },
               {
                 area: 'CTF & Practical',
-                count: 2,
+                count: 3,
                 examples: ['TryHackMe', 'Hands-on Labs'],
               },
             ].map((category, index) => (
