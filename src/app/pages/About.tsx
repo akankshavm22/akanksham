@@ -28,7 +28,7 @@ export function About() {
           >
             <div className="bg-slate-900 border border-cyan-500/20 rounded-lg overflow-hidden">
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQFP85kzqBTehw/profile-displayphoto-scale_400_400/B56Zsqn0aCIYAk-/0/1765946642882?e=1777507200&v=beta&t=3WBikrWK4LfXrnTY7Xf0FxLn6tobkNypMJpbovROx4k"
+                src="https://media.licdn.com/dms/image/v2/D5603AQFP85kzqBTehw/profile-displayphoto-scale_400_400/B56Zsqn0aCIYAk-/0/1765946642882?e=1779321600&v=beta&t=GVGxG6qap9N_1qOLbHiS_g2ZpW9JVM77z66Qxz4qk6Q"
                 alt="Akanksha Mane"
                 className="w-full h-auto"
               />
