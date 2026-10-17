@@ -3,6 +3,17 @@ import { motion } from 'motion/react';
 
 export function Education() {
   const educationData = [
+     {
+      institution: 'Royal Holloway, University of London',
+      degree: 'Master of Science, Information & Cyber Security',
+      period: 'Sep 2026 - Jun 2028',
+      grade: '-',
+      activities: [
+        'Networking & Security Lab Practice',
+        'Linux System Administration Basics',
+        'Academic Mini Projects',
+      ],
+    },
     {
       institution: 'University of Mumbai',
       degree: 'Bachelor of Engineering - BE, Information Technology',
